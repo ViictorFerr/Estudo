@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.woff2); 
+    
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.woff2);
+}
+
+@font-face {
+    font-family: Lato-Bold-Italic;
+    src: url(../fonts/Lato-BoldItalic.woff2);
+}
+
+@font-face {
+    font-family: Lato-Italic;
+    src: url(../fonts/Lato-Italic.woff2);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container-hero-info {
+    background: #f11718;
+    display: flex;
+}
+
+.big-logo {
+    width: 50%;
+}
+
+.info-history {
+    width: 50%;
+}
+
+.title {
+    border-bottom: 1px solid #ededed;
+    padding-bottom:50px;
+    font-style: italic;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 50px;
+    color: #fff;
+}
+
+.info-hero {
+    font-family: Lato;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.tradition {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title-tradition {
+    font-style: italic;
+    font-family: Lato;
+    color: #e20000;
+    font-weight: 400;
+    font-size: 48px;
+    width: 50%;
+}
+
+.description {
+    font-style: italic;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 21px;
+    color: #222;
+    width: 50%;
+}
+
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+.order-3 {
+    order: 3;
+}
+.toast {
+    width: 500px;
+}

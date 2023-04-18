@@ -1,0 +1,602 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.woff2); 
+    
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.woff2);
+}
+
+@font-face {
+    font-family: Lato-Bold-Italic;
+    src: url(../fonts/Lato-BoldItalic.woff2);
+}
+
+@font-face {
+    font-family: Lato-Italic;
+    src: url(../fonts/Lato-Italic.woff2);
+}
+
+body {
+    color: #ededed;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    box-shadow: 0 2px 40px rgb(0 0 0 / 25%);
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.container-header {
+    justify-content: space-between;
+    align-items: center; 
+    max-width: 1586px;
+    padding: 0 22px;
+    margin: 0 auto;
+    display: flex;
+    height: 68px;
+}
+
+.link  {
+    text-transform: uppercase;
+}
+
+.logo {
+    height: 53px;
+    width: 50px;
+}
+
+.wrapper-link {
+    align-items: center;
+    display: flex;
+}
+
+.link-item {
+    margin-left: 16px;
+    font-family: Lato;
+    color: #979797;
+    font-size: 15px;
+}
+
+.menu-calabresa {
+    margin-left: 25px;
+}
+
+.portal-calabresa {
+    height: 71px;
+}
+
+.wrapper-portals {
+    align-items: center;
+    position: relative;
+    display: flex;
+    gap: 23px;
+}
+
+.bar-before::before {
+    content: "";
+
+    transform: translateY(-50%);
+    background-color: red;
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 2px;
+    top: 50%;
+}
+
+.portal {
+    flex-direction: column;
+    line-height: 1em;
+    display: flex;
+}
+
+.link-span {
+    font-family: Lato;
+    color: #979797;
+    font-size: 8px;
+}
+
+.img-portal {
+    height: 18px;
+}
+
+.hero {
+    justify-content: center;
+    padding-top: 66px;
+    display: flex;
+}
+
+@media (max-width: 1920px) {
+    .image-hero {
+        width: 100%;
+    }
+}
+
+.filter-mb {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    left: 50%;
+}
+
+.filter {
+    border-bottom: 7px solid #e20000;
+    background-color: #fff;
+    justify-content: center;
+    padding: 15px 22px;
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.wrapper-collapse {
+    padding: 15px 30px;
+    position: relative;
+}
+
+.description-filter {
+    font-family: Lato;
+    background: none;
+    font-size: 20px;
+    color: #444;
+    border: none;
+}
+
+.collapse {
+   position: absolute;
+   display: none;
+   top: 100%;
+   left: 0;
+}
+
+.item {
+    padding: 19.2px 1em 19.2px 2.1em;
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    list-style: none;
+    width: 288px;
+}
+
+.item:hover {
+    background-color: #e80100;
+}
+
+.bg-active {
+    background-color: red;
+}
+
+.description {
+    font-family: Lato;
+    font-size: 18px;
+    color: #444;
+}
+
+.color-active {
+    color: white;
+}
+
+.wrappe-recipes {
+    padding: 78px 3% 20px;
+    background: #ededed;
+    padding-top: 78px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.card-recipe {
+    box-shadow: 4px 4px 15px rgb(0 0 0 / 15%);
+    display: block;
+    width: 328px;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.content-card {
+    padding: 25px;
+    background-color: #fff;
+}
+
+.description-recipe {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 15px;
+    color: #000;
+}
+
+.wrapper-icons {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.time-recipe, .portion {
+    align-items: center;
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+}
+
+.span {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+}
+
+.wrapper-button {
+    justify-content: center;
+    padding: 20px 0;
+    display: flex;
+    width: 100%;
+}
+
+.button {
+    border: 1px solid #e20000;
+    padding: 27px 45px;
+}
+
+.more-recipes {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Lato;
+    color: #e20000;
+    font-size: 16px;
+}
+
+.more-recipes::after {
+    content: "→";
+
+    padding-left: 7px;
+    font-weight: bold;
+    line-height: 1em;
+    font-size: 16px;
+}
+
+.gallery-products {
+    display: flex;
+    background-color: #e20000;
+}
+
+.nav-left {
+    background-color: white;
+    width: 30%;
+}
+
+.title-product {
+    background-color: red;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.list-products {
+    padding: 0 20px;
+}
+
+.product {
+    border-bottom: 1px solid #dddfdf;
+    padding: 15px 0;
+}
+
+.teste {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.img-teste {
+    height: 40px;
+    width: 40px;
+}
+
+.tag-name {
+    text-transform: uppercase;
+    letter-spacing: 2.99px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+}
+
+.middle-hero {
+    width: 77%;
+    background-image: url(../images/home/receita.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta {
+    display: flex;
+    align-items: end;
+    position: absolute;
+    bottom: 0;
+}
+
+.image-cta {
+    width: 116px;
+    padding: 10px 20px;
+    background-color: #eb1716;
+}
+
+.description-cta {
+    padding: 22px 0 22px 20px;
+    width: 100vw;
+    background: rgba(0,0,0,.5);
+}
+
+.slug-name {
+    margin-bottom: 13px;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+.span-link {
+    font-family: Lato;
+    font-weight: 400;
+}
+
+.toscana {
+    max-width: 100%;
+}
+
+.middle-image {
+    width: 100%;
+}
+
+.product-aside {
+    width: 20.53872054%;
+    padding: 40px 0;
+}
+
+.wrapper-products-image {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    gap: 20px;
+}
+
+.product-image {
+    max-width: 150px;
+    height: 60%;
+}
+
+.product-name {
+    text-align: center;
+    font-family: Lato;
+    font-size: 13px;
+}
+
+.wrappe-blocks {
+    display: flex;
+}
+
+.block {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.x1 {
+    background-color: white;
+}
+
+.x2 {
+    background-color: #e20000;
+}
+
+.image-block {
+    width: 50%;
+    height: 100%;
+}
+
+.hashtag {
+    text-transform: uppercase;
+    justify-content: center;
+    letter-spacing: .199em;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Lato;
+    font-size: 15px;
+    display: flex;
+    width: 50%;
+}
+
+.colored-hashtag {
+    background-color: red;
+}
+
+.footer {
+    justify-content: space-between;
+    padding: 142px 22px 145px;
+    background-color: #222;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.footer-container {
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+}
+
+.link-footer {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 16px;
+    height: 100%;
+}
+
+.title-bold {
+    font-weight: bold;
+    font-family: Lato;
+    font-size: 15px;
+    margin-bottom: 0.7em
+}   
+
+.info-itens {
+    font-family: Lato;
+    margin-top: 1.2em
+}
+
+.whatsapp-contact {
+    margin-bottom: 0.7em;
+    align-items: center;
+    display: flex;
+}
+
+.contact {
+    font-family: Lato;
+}
+
+.logo-whatsapp {
+    height: 30px;
+}
+
+@media (max-width: 1024px) {
+    .wrapper-link {
+        display: none;
+    }
+    
+    .link-item {
+        font-size: 10px;
+    }
+    
+    .portal-calabresa {
+        width: 152px;
+    }
+
+    .gallery-products {
+        flex-direction: column;
+    }
+
+    .wrappe-recipes {
+        justify-content: center;
+    }
+
+    .nav-left {
+        width: 100%;
+    }
+    
+    .title-product {
+        font-size: 18px;
+    }
+
+    .middle-hero {
+        height: 500px;
+        width: 100%;
+    }
+
+    .product-aside {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    .wrappe-blocks {
+        flex-direction: column;
+    }
+
+    .block {
+        width: 100%;
+    }
+    
+    .list-products {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 41px;
+        width: 38px;
+    }
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .filter-mb {
+        padding: 0 10px 10px 10px;
+    }
+
+    .filter {
+        border-bottom-width: 3px;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .wrapper-collapse {
+        padding: 2px 25px 0 10px;
+    }
+
+    .description-filter {
+        font-size: 14px;
+    }
+
+    .description-recipe {
+        font-size: 13px;
+    }
+
+    .wrappe-recipes {
+        padding-top: 50px;
+    }
+
+    .button {
+        padding: 15px 20px;
+    }
+
+    .middle-hero {
+        height: 220px;
+    }
+
+    .image-cta {
+        width: 26%;
+    }
+
+    .description-cta {
+        padding: 10px 0 10px 10px ;    
+    }
+
+    .slug-name {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .span-link {
+        font-size: 10px;
+    }
+
+    .more-recipes {
+        font-size: 11px;
+    }
+}
